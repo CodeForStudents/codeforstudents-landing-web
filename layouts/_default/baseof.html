@@ -16,7 +16,7 @@
     {{ block "javascript" . }}{{ end }}
 
     <title>{{ .Title }} | Code for Students</title>
-    <link rel="icon" type="image/png" href="/assets/cfs/cfs-logo-white.svg"/>
+    <link rel="icon" type="image/png" href="./assets/cfs/cfs-logo-white.svg"/>
     {{ $style := resources.Get "scss/main.scss" | resources.ToCSS (dict "outputStyle" "compressed") | resources.Minify | fingerprint "md5" }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
     {{ range .AlternativeOutputFormats }}
@@ -26,8 +26,8 @@
     {{ $humanize := resources.Get "js/humanize.min.js" }}
     {{ $secureDeferredJS := slice $humanize | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint "sha512" }}
     <script defer type="text/javascript" src="{{ $secureDeferredJS.RelPermalink }}" integrity="{{ $secureDeferredJS.Data.Integrity }}"></script>
-    <link rel="preload" href="/css/aos-2.3.1.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/css/aos-2.3.1.css"></noscript>
+    <link rel="preload" href="./css/aos-2.3.1.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./css/aos-2.3.1.css"></noscript>
 </head>
 <body>
 {{ partial "header" . }}
@@ -47,7 +47,7 @@
 <script>
   AOS.init({
     offset: 80, // offset (in px) from the original trigger point
-    duration: 800, // values from 0 to 3000, with step 50ms
+    duration: 650, // values from 0 to 3000, with step 50ms
     easing: 'ease-in-out', // default easing for AOS animations
   });
 </script>
