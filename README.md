@@ -1,8 +1,4 @@
-# forest8-landing-hugo
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a6701edc-5780-40a1-b22c-e2f06419961a/deploy-status)](https://app.netlify.com/sites/wizardly-kare-0f29d9/deploys)
-
-[Current production build](https://wizardly-kare-0f29d9.netlify.app/)
+# code for students -landing-hugo
 
 ## Prerequisites
 
