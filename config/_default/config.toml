@@ -1,0 +1,11 @@
+baseURL = "https://codeforstudents.ch/"
+languageCode = "de"
+title = "IT trifft Schule | Code For Students"
+timeout = 1200000
+
+#enter settings for Table of contents
+[markup]
+  [markup.tableOfContents]
+    ordered = true
+    startLevel = 2
+    endLevel = 2
